@@ -1,0 +1,37 @@
+﻿@model Demo_Product.EntityLayer.Concrete.Product
+@{
+    ViewData["Title"] = "EditProduct";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<h1>Edit Product</h1>
+
+<form asp-controller="Product" asp-action="EditProduct" method="post">
+
+    <div>
+        <label> Product Id</label>
+        <input  asp-for="ProductId" class="form-control"/>
+
+    </div>
+
+    <div>
+        <label>Product Name</label>
+        <input asp-for="ProductName" class="form-control"/>
+    </div>
+
+    <div>
+        <label>Product Price</label>
+
+        <input asp-for="ProductPrice" class="form-control"/>
+
+    </div>
+
+    <div>
+        <label>Product Stock</label>
+
+        <input asp-for="ProductStock" class="form-control"/>
+    </div>
+
+    <button class="btn btn-secondary btn-sm mt-3">Update</button>
+
+</form>

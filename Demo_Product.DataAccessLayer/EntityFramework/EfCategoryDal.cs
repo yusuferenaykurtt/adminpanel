@@ -1,0 +1,19 @@
+﻿using Demo_Product.DataAccessLayer.Abstracts;
+using Demo_Product.DataAccessLayer.Concrete;
+using Demo_Product.DataAccessLayer.Repositories;
+using EntityLayer;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Demo_Product.DataAccessLayer.EntityFramework
+{
+    public class EfCategoryDal : GenericRepository<Category>, ICategoryDal
+    {
+        public EfCategoryDal(Context context) : base(context)
+        {
+        }
+    }
+}

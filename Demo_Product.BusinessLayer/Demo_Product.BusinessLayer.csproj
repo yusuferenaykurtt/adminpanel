@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Demo_Product.DataAccessLayer\Demo_Product.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\Demo_Product.EntityLayer\Demo_Product.EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.8" />
+    <PackageReference Include="OpenXmlPowerTools" Version="4.5.3.2" />
+    <PackageReference Include="SolrNet.Core" Version="1.2.1" />
+  </ItemGroup>
+
+</Project>

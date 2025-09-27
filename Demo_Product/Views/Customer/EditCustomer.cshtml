@@ -1,0 +1,36 @@
+﻿@model Demo_Product.EntityLayer.Concrete.Customer
+@{
+    ViewData["Title"] = "EditCustomer";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<h1>Edit Customer</h1>
+
+<form asp-controller="Customer" asp-action="EditCustomer" method="post">
+
+    <div>
+        <label> Customer Id</label>
+        <input asp-for="CustomerId" class="form-control" />
+
+    </div>
+
+    <div>
+        <label>Customer Name</label>
+        <input asp-for="CustomerName" class="form-control" />
+    </div>
+
+    <div>
+        <label>Customer City</label>
+
+        <input asp-for="CustomerCity" class="form-control" />
+
+    </div>
+    <div>
+        <label>Customer Job </label>
+        <select asp-for="JobId" asp-items="ViewBag.v" class="form-control"></select>
+    </div>
+   
+
+    <button class="btn btn-secondary btn-sm mt-3">Update</button>
+
+</form>

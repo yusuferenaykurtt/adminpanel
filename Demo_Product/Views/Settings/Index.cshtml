@@ -1,0 +1,33 @@
+﻿@model Demo_Product.Models.UserSettingViewModel
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<h1>Edit Profil</h1>
+
+<form method="post">
+
+    <div>
+
+        <label>Change Name</label>
+        <input asp-for="UserName" type="text" class="form form-control" />
+
+        <label>Change Surname</label>
+        <input asp-for="surName" type="text" class="form-check form-control" />
+
+        <label>Change Email</label>
+        <input asp-for="eMail" type="text" class="form-check form-control" />
+
+        <label>Change Password</label>
+        <input asp-for="password" type="text" class="form-check form-control" />
+
+    </div>
+    <br />
+<button class="btn btn-secondary mb-3 btn-sm">Change</button>
+
+
+</form>
+

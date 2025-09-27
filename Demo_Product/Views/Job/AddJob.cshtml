@@ -1,0 +1,27 @@
+﻿@model Demo_Product.EntityLayer.Concrete.Job
+
+@{
+    ViewData["Title"] = "AddJob";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<h1>Add Job</h1>
+
+
+
+<form asp-controller="Job" asp-action="AddJob" method="post">
+
+    <div>
+        <label>Job Name</label>
+        <input asp-for="JobId" class="form-control" />
+        <span asp-validation-for="JobName" class="text-danger"></span>
+
+    </div>
+
+  
+
+    <br />
+    <button type="submit" class="btn btn-success mb-3 btn-sm">Add New Job</button>
+
+</form>
+
